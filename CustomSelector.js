@@ -1,22 +1,19 @@
 import React from "react";
-import Button from "../Button/Button";
 
-
+// First of all you should gothrogh the Example.js file before this file
 function CustomSelector(props){
 
-	const {options, className } = props;
-	const OptionData = options;
-    const   OptionItem = function(val) {
-            return <option>{val}</option>;
-			};
-
+	const {options, className } = props; //passing className and options as a props wherever you want
+	const OptionData = options; //Example of how to using the Options in Example.js file
+    	const OptionItem = function(val) {
+            			return <option>{val}</option>;
+				};
 
 	return(
-			<>
-
-				<select className={className}>{OptionData.map(OptionItem)}</select>
-
-			</>
+		<>
+			//OptionData is mapping and return the array values.
+			<select className={className}>{OptionData.map(OptionItem)}</select> 
+		</>
 
 	)
 }
