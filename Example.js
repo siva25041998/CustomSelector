@@ -8,7 +8,7 @@ function Example{
 	const Months = ['jan' ,'Feb' , 'MAr', 'Apr', 'May', 'jun', 'jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 	return(
 		<>
-			<CustomSelector options={weekDays} />
+			<CustomSelector options={weekDays} className= 'use classes as per your need' />
 			<CustomSelector options={Months} />
 		</>
 
